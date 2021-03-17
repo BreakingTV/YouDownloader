@@ -23,4 +23,7 @@ Download Successful
 Where you want to store this video? Full path: /home/USER/Downloads
 ```
 
-### Enjoy!
+## Note
+You can only download 720p higher is not possible becouse Youtube don't make files of these!
+
+I hope you find a good use to this little program!
