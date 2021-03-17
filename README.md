@@ -15,7 +15,14 @@ When installed use:
 Example:
 
 ```
-Name/URL: Funny Cat Videos
+Name/URL: Someordinarygamers
+What video you want to Download?
+[1]I Almost Lost My Virtual Machines... - SomeOrdinaryGamers
+[2]I Have Really Good News... - SomeOrdinaryGamers
+[3]Worst Game Ever... - SomeOrdinaryGamers
+[4]addressing a controversy... - SomeOrdinaryGamers
+[5]Cancel Culture... - SomeOrdinaryGamers
+2
 Download Successful
 Where you want to store this video? Full path: /home/USER/Downloads
 ```
