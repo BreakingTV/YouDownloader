@@ -3,7 +3,7 @@
 This is a Quick and easy to use Python3 Youtube video Downloader!
 
 ## Before you use it
-Spaces are not alowed when you are using the Name function
+Only use these: `(?:v=|\/)([0-9A-Za-z_-]{11}).*` whey you use the Name function
 
 ## How to use it
 
