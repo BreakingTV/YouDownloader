@@ -2,9 +2,6 @@
 
 This is a Quick and easy to use Python3 Youtube video Downloader!
 
-## Before you use it
-Only use these: `(?:v=|\/)([0-9A-Za-z_-]{11}).*` when you use the Name function
-
 ## How to use it
 
 Dependencies you need:
