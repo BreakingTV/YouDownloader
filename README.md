@@ -15,7 +15,7 @@ When installed use:
 Example:
 
 ```
-Name/URL: Example_Secondword
+Name/URL: Funny Cat Videos
 Download Successful
 Where you want to store this video? Full path: /home/USER/Downloads
 ```
