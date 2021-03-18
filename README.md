@@ -12,7 +12,7 @@ When installed use:
 
 `python3 Downloader.py`
 
-Example:
+### Example:
 
 ```
 Name/URL: Funny cat videos
@@ -35,7 +35,6 @@ Process finished with exit code 0
 
 ```
 
-## Note
-You can only download 720p higher is not possible becouse Youtube don't make files of these!
 
-I hope you find a good use to this little program!
+## Note
+1080p videos now avaible!
