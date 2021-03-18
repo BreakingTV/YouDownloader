@@ -12,7 +12,7 @@ When installed use:
 
 `python3 Downloader.py`
 
-### Example:
+### Example (not with https://):
 
 ```
 Name/URL: Funny cat videos
