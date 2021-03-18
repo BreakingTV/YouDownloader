@@ -15,16 +15,24 @@ When installed use:
 Example:
 
 ```
-Name/URL: Someordinarygamers
-What video you want to Download?
-[1]I Almost Lost My Virtual Machines... - SomeOrdinaryGamers
-[2]I Have Really Good News... - SomeOrdinaryGamers
-[3]Worst Game Ever... - SomeOrdinaryGamers
-[4]addressing a controversy... - SomeOrdinaryGamers
-[5]Cancel Culture... - SomeOrdinaryGamers
-2
+Name/URL: Funny cat videos
+Loading...
+ 
+[0]Cute and Funny Cat Videos to Keep You Smiling! 🐱 - Rufus
+[1]It's TIME for SUPER LAUGH! - Best FUNNY CAT videos - Tiger Productions
+[2]Funniest Cats 😹 - Don't try to hold back Laughter 😂 - Funny Cats Life - Funny Cats Life
+[3]The funniest and most humorous cat videos ever! - Funny cat compilation - Tiger Productions
+ 
+Choose one video you want to download
+0
+Using: Cute and Funny Cat Videos to Keep You Smiling! 🐱
+Loading...
 Download Successful
-Where you want to store this video? Full path: /home/USER/Downloads
+when you don't know press Enter
+Where you want to store this video? Full path: 
+
+Process finished with exit code 0
+
 ```
 
 ## Note
