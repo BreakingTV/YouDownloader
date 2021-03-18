@@ -1,4 +1,4 @@
-# YoutubeDownloader
+# YouDownloader
 
 This is a Quick and easy to use Python3 Youtube video Downloader!
 
