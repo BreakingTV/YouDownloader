@@ -7,6 +7,7 @@ This is a Quick and easy to use Python3 Youtube video Downloader!
 Dependencies you need:
 
 `pip3 install pytube`
+`pip3 install moviepy`
 
 When installed use:
 
@@ -37,4 +38,5 @@ Process finished with exit code 0
 
 
 ## Note
-1080p videos now avaible!
+working on 1080p videos.
+720p Videos are avaible!
