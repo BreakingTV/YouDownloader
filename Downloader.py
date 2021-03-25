@@ -3,8 +3,11 @@ import pytube
 import sys
 import urllib.request
 import re
+import os
+from moviepy.editor import *
+import moviepy.editor as mpe
 
-videos = [0, 1, 2, 3]
+videos = [0]
 
 search_keyword = input("Name/URL: ").replace(" ", "+").lower()
 
@@ -43,16 +46,27 @@ result = "https://www.youtube.com/watch?v=" + video_ids[inp]
 
 youtube_video = pytube.YouTube(result)
 print("Using: " + pytube.YouTube(result).title)
-print("Loading...")
 
 stream = youtube_video.streams.filter(res="1080p").first()
 
-stream.download()
-
-print("Download Successful")
 print("when you don't know press Enter")
 inp = input("Where you want to store this video? Full path: ")
+
 if inp.startswith(""):
-    sys.exit()
+    print("Using file location")
 else:
-    shutil.move(stream.default_filename, inp + "/")
+    os.chdir(inp)
+    print("Location is: " + inp + "/")
+
+stream.download()
+
+# stream_audio = youtube_video.streams.get_audio_only()
+# stream_audio.download("", "audio")
+
+# audio = mpe.AudioFileClip("audio.mp4")
+# video1 = mpe.VideoFileClip(stream.default_filename)
+# final = video1.set_audio(audio)
+# final.write_videofile("/home/danil/Videos/output.mp4", codec='mp4', audio_codec='libvorbis')
+
+print("Download Successful")
+
