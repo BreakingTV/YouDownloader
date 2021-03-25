@@ -6,9 +6,8 @@ This is a Quick and easy to use Python3 Youtube video Downloader!
 
 Dependencies you need:
 
-`pip3 install pytube`
-
-`pip3 install moviepy`
+- `pip3 install pytube` 
+- `pip3 install moviepy`
 
 When installed use:
 
