@@ -1,5 +1,4 @@
 import re
-import shutil
 import urllib.request
 
 import pytube
@@ -7,9 +6,8 @@ from moviepy.editor import *
 
 videos = [0, 1, 2, 3, 4, 5]
 
-Option = input("option:").lower()
 
-if Option == "video".lower():
+def main():
     search_keyword = input("Name: ").replace(" ", "+").lower()
     html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
     video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
@@ -52,37 +50,3 @@ if Option == "video".lower():
     # final.write_videofile("/home/danil/Videos/output.mp4", codec='mp4', audio_codec='libvorbis')
 
     print("Download Successful")
-
-else:
-    if Option == "https".lower():
-        search_keyword = input("URL: ").replace(" ", "+").lower()
-        print("Their can be some errors with the get https://")
-        youtube_video = pytube.YouTube(search_keyword)
-        stream = youtube_video.streams.filter(res="1080p").first()
-        print("Using: " + stream.title)
-        print("Loading...")
-
-        stream.download()
-        print("Download Successful")
-        print("when you don't know press Enter")
-        inp = input("Where you want to store this video? Full path: ")
-        if inp.startswith(""):
-            sys.exit()
-        else:
-            shutil.move(stream.default_filename, inp + "/")
-    else:
-        if Option == "playlist".lower():
-            YP = pytube.Playlist(input("URL: "))
-
-            os.mkdir(YP.title)
-            os.chdir(YP.title)
-
-            for v in YP.video_urls:
-                video = pytube.YouTube(v)
-
-                stream = video.streams.filter(res="720p").first()
-                print("Downloading: " + stream.title)
-                stream.download()
-                print("Downloaded " + stream.title)
-
-            print("All Videos Downloaded!")
