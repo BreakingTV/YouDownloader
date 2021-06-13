@@ -1,8 +1,8 @@
 import re
 import urllib.request
+import os
 
 import pytube
-from moviepy.editor import *
 
 videos = [0, 1, 2, 3, 4, 5]
 
